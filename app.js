@@ -110,6 +110,6 @@ app.use("/api/cards", cardsRouter);
 app.use("/api/chats", chatRouter);
 
 const PORT = 8181;
-server.listen(PORT, () =>
+server.listen(proccess.env.PORT, () =>
   console.log(chalk.blueBright.bold(`server run on: http://localhost:${PORT}`))
 );
